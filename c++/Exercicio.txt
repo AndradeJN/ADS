@@ -1,0 +1,22 @@
+TAREFA DE FIXAÇÃO
+
+a) Monte, execute e faça o diagrama de blocos do programa 3 desta aula. Não é
+necessário colocar a impressão da tabela de simulação dentro do diagrama de
+blocos, apenas execute o programa do jeito que está, fazendo os Diagramas
+do nível 1 - interior do main ( ) e nível 2 - sub rotinas.
+
+b) Fazer o quadro resumo das funções e o Código fonte: faça um algoritmo para
+ler uma lista de sexos e salários, sexo será do tipo String “F”, “M” ou “f”, “m”,
+sendo f: feminino e m: masculino. Se o usuário digitar algo diferente destes
+caracteres exiba “Sexo inválido, digite novamente!”. Ao final imprima o saldo e
+a média dos salários dos homens, o mesmo para as mulheres. Use
+operadores de atribuição, funções, voids e switch case no main().
+
+c) Fazer o quadro resumo das funções e o Código Fonte: faça um algoritmo para
+ler uma lista de idades e salários, ao final imprima o maior e o menor salário
+dos menores de idade, o menor e o maior salário dos maiores de idade, a
+quantidade de menores de idade e quantidade dos maiores de idade. Use
+operadores de atribuição, funções, voids e switch case no main().
+
+
+NOTA: Entrega obrigatória individual dentro de um arquivo do ms-word

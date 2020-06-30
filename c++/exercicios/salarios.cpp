@@ -13,6 +13,9 @@
 
 using namespace std;
 
+void salarios( );
+
+
 void salarios( )
 {
     double cont = 0, salario, salariomaior, salariomenor;
