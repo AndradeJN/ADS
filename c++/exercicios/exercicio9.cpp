@@ -39,8 +39,6 @@ void mostrar (int n1, int n2)
     system("pause");  
 }
 
-
-
 int main ()
 { 
     setlocale(LC_ALL, "Portuguese" );
@@ -52,4 +50,5 @@ int main ()
     n2 = 13;
     
     mostrar ( n1 , n2 );
-}
+}  
+
