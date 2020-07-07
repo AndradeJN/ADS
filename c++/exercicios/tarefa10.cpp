@@ -11,16 +11,19 @@
 #include "string"
 using namespace std;
 
+
+
+string nome [] = {"Sara Lemes","Ricardo Jafé"};
+double salario [] = {12000, 10243.20};
+int i, idade[]={30, 45};
+ 
+
 void exibir(string nome, double salario, int idade)
 {
     cout << "Nome: "<< nome <<"\nSlário: "<<salario << "\nIdade: "<< idade << "\n" << endl;
 }
 
-    string nome [] = {"Sara Lemes","Ricardo Jafé"};
-    double salario [] = {12000, 10243.20};
-    int i, idade[]={30, 45};
- 
-    string nom;
+
 int main () 
 { 
     setlocale(LC_ALL, "Portuguese-brasilian");
