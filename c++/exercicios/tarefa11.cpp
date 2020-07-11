@@ -1,5 +1,5 @@
 /**
- * 
+ * Exercício Strings
  * Aluno: Jose Neto Guimarães Andrade
  * Orientador: Elizeu Lemes
  * Linguagem de Programação
@@ -24,31 +24,35 @@ string lerstr()
 {
     cin.ignore();
     string str;
-    cin >> str;
+    getline(cin, str);
 
-    return str;
+    return str; 
 
 }
 
 void exibir(string texto, string palavra)
 {
-    int t = texto.size(); // tamanho
-    int p = palavra.size(); // tamanho
- 
-    for ( int i = 1; i < t ; i ++ ) 
+    int count=0, repete=0, i=0;
+    
+    while(repete != -1)
     {
-        int aux = i; 
-        for ( int i = 1; i < p; i++ ) 
-        {   
-            count = 0;
-            if(texto[i] == palavra[1])
-            {
-                count++;
-            }
-
+        repete = texto.find(palavra, i);
+        i = repete+1;
+        if (repete >= -1)
+        {
+            count++;
         }
     }
-    cout << "\nAs seguinte palavra" << palavra << " Repetiu " << count << "Vezes!\n";
+
+    if(count == 0)
+    {
+        cout << " A palavra: (" << palavra << ") não foi encontrada\n\nAperte qualquer tecla para voltar ao menu!!";
+    } 
+    else
+    {
+        cout << "\nA palavra: (" << palavra << ") repetiu " << count << " vezes!\n\nAperte qualquer tecla para voltar ao menu!!";
+    }
+    getchar();
 }
 
 int main()

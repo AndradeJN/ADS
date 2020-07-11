@@ -19,7 +19,7 @@ int i, idade[]={30, 45};
  
 
 void exibir(string nome, double salario, int idade)
-{
+{   
     cout << "Nome: "<< nome <<"\nSlário: "<<salario << "\nIdade: "<< idade << "\n" << endl;
 }
 
@@ -27,9 +27,9 @@ void exibir(string nome, double salario, int idade)
 int main () 
 { 
     setlocale(LC_ALL, "Portuguese-brasilian");
-
+    system("clear");
     double x;
-
+    
     for (i =0; i <=1; i++)
     {   
         salario [i] = salario [i] * 1.1; 
