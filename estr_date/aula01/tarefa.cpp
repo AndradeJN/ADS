@@ -16,8 +16,10 @@ int     main()
     setlocale(LC_ALL, "Portuguese");
 
     string nome [] = {"Sara Lemes", "Ricardo Jafé"};  
-    double  salario  []  =  {12000,  10243.20};  
-    int  tecla, idade[]={30,  45};
+    double salario  []  =  {12000,  10243.20};  
+    int n, tecla, idade[]={30,  45};
+    
+    n = sizeof( idade ) / sizeof(int); 
 
     menu:
     system("clear");
@@ -30,7 +32,7 @@ int     main()
     switch(tecla)
     {
         case 1:
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < n; i++)
         {
             cout << "Nome: " << nome[i] << "\nSalário: " << salario[i] << "\nIdade: " << idade[i] << "\n\n"; 
         }
@@ -40,7 +42,7 @@ int     main()
         goto menu;
 
         case 2:
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < n; i++)
         {
            cout << "Nome: " << nome[i] << "\nSalário: " << salario[i] * 1.1 << "\nIdade: " << idade[i] << "\n\n";
         }
