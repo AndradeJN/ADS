@@ -1,6 +1,6 @@
 
 /**
- * Exercício: Salário maior e menor
+ * Exercício: Salário medio sexo
  * Aluno: Jose Neto Guimarães Andrade
  * Orientador: Elizeu Lemes
  * Linguagem de Programação
@@ -37,22 +37,3 @@ void salarios( )
     cout << "\nSalário Maior:" << salariomaior; 
 }
 
-int main() 
-{ 
-    setlocale(LC_ALL, "Portuguese");
-    int tecla = 0;
-    while (tecla != 2)
-    {  
-        cout << "\n**menu**\n1 Executar\n2 Sair\nitem:";
-        cin >> tecla;
-        switch (tecla)
-        { 
-            case 1: salarios(); 
-            break;
-            case 2: 
-            cout << "\nPrograma finalizado!";
-            exit(0); 
-            break;
-        } 
-    }
-}
