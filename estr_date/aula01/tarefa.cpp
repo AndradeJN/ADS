@@ -1,6 +1,6 @@
 
 /**
- * Exercício: Idade para votar 
+ * Exercício: Vetores Explícitos e implícitos
  * Aluno: Jose Neto Guimarães Andrade
  * Orientador: Elizeu Lemes
  * Estrutura de dados
@@ -24,7 +24,7 @@ int     main()
     menu:
     system("clear");
     cout << "==========================================\n";
-    cout << "Escolha uma opção:\n1- Exibir\n2- Exibir com aumento\n3 - Sair\n";
+    cout << "Escolha uma opção:\n1- Exibir\n2- Exibir com aumento\n3- Sair\n";
     cout << "==========================================\n";
     cin >> tecla;
     system("clear");
