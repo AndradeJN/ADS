@@ -65,7 +65,7 @@ int ler_d()
     return d;
 }
 
-int inserir()
+void inserir()
 {
     _values.a[i] = ler_a();
     _values.b[i] = ler_b();
@@ -73,7 +73,7 @@ int inserir()
     _values.d[i] = ler_d();
 }
 
-int calcular()
+void calcular()
 {
     p = _values.a[i] * _values.c[i];
     s = _values.b[i] + _values.d[i];

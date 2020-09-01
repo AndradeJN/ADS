@@ -11,9 +11,11 @@ int main ()
 
     int aux = 0;
 
-    for (int i =0; i<n; i++)
+    for (int i =0; i < n; i++)
     {
         aux = pow(x[i], 2) + x[i];
         cout << aux << endl;
     }
 }
+
+double cor();
