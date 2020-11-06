@@ -101,7 +101,7 @@ int main ()
  
     MENU:
     system("clear");
-    menu = "\n*** Ponteiros para Struct ";
+    menu =  "\n*** Ponteiros para Struct ";
     menu += "\n1 Leitura de A, B e C";
     menu += "\n2 Mostrar resultados";
     menu += "\n3 Sair do Programa";

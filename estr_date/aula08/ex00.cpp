@@ -1,24 +1,18 @@
 #include <cstdlib>
 #include <iostream>
 #include <math.h>
-using namespace std;
 
- 
+using namespace std;
 
 #define tamanho 2
 
- 
-
 typedef struct registro pilha;
+
 struct registro 
 {
     int topo;
     int dado[ tamanho ];    
 };
-
- 
-
- 
 
 bool vazia  ( pilha  p1 ) ;
 bool cheia  ( pilha  p1 );
@@ -27,25 +21,14 @@ pilha pop   ( pilha  p1  );
 void exibir ( pilha p1 );
 void executar_pilha();
 
- 
-
- 
-
 int main() 
+{    
+    setlocale(LC_ALL, "Portuguese");
 
- 
-
-{    setlocale(LC_ALL, "Portuguese");
-
- 
-
-     executar_pilha();
+    executar_pilha();
     
     return 0;
 }
-
- 
-
 
 bool vazia ( pilha  p1 ) 
 {
@@ -55,8 +38,6 @@ bool vazia ( pilha  p1 )
         return false;
 }
 
- 
-
 bool cheia ( pilha  p1 ) 
 {
     if ( p1.topo == 1 )
@@ -64,10 +45,7 @@ bool cheia ( pilha  p1 )
     else
         return false;
 }
-
  
-
-
 pilha push ( int valor, pilha p1 ) 
 {
     if ( cheia( p1 ) == true )
@@ -81,9 +59,7 @@ pilha push ( int valor, pilha p1 )
     p1.dado [ p1.topo ] = valor;
  
     return p1; 
-}
-
- 
+} 
 
 pilha pop ( pilha  p1  ) 
 {
@@ -94,8 +70,6 @@ pilha pop ( pilha  p1  )
         return p1; 
     }
 
- 
-
     cout << "\nO valor desempilhado será " << p1.dado[ p1.topo ] << endl;
     system("sleep 2");
     
@@ -104,8 +78,6 @@ pilha pop ( pilha  p1  )
     
     return p1; // retorna a pilha p1 com um elemento a menos 
 }
-
- 
 
 void exibir ( pilha p1 ) 
 {
@@ -122,9 +94,6 @@ void exibir ( pilha p1 )
         
     system("sleep 5");
 }
-
- 
-
 
 void executar_pilha ( ) 
 {
@@ -159,7 +128,5 @@ void executar_pilha ( )
        
        case 4: exit(0); break;
    } goto MENU;
-   
-   
-   
+     
 }
